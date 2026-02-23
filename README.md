@@ -1,4 +1,21 @@
-# Design Mastery for Claude Code
+<p align="center">
+  <img src="https://ormus.solutions/mascot/pixellab_liquid_to_eye.gif" alt="Design Mastery" width="128" style="image-rendering: pixelated;" />
+</p>
+
+<h1 align="center">Design Mastery</h1>
+
+<p align="center">
+  <em>Learn from Saul Bass, Dieter Rams, and the masters -- through code</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/HermeticOrmus/design-mastery-claude-code/stargazers"><img src="https://img.shields.io/github/stars/HermeticOrmus/design-mastery-claude-code?style=flat-square&color=aa8142" alt="Stars" /></a>
+  <a href="https://github.com/HermeticOrmus/design-mastery-claude-code/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HermeticOrmus/design-mastery-claude-code?style=flat-square&color=aa8142" alt="License" /></a>
+  <a href="https://github.com/HermeticOrmus/design-mastery-claude-code/commits"><img src="https://img.shields.io/github/last-commit/HermeticOrmus/design-mastery-claude-code?style=flat-square&color=aa8142" alt="Last Commit" /></a>
+  <img src="https://img.shields.io/badge/Claude Code-aa8142?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code" />
+</p>
+
+---
 
 A comprehensive design knowledge plugin that brings timeless design wisdom to AI-assisted development. Learn from legendary designers, apply fundamental principles, and build professional brand identities.
 
