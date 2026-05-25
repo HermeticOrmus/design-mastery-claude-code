@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://ormus.solutions/mascot/pixellab_liquid_to_lotus.gif" alt="Design Mastery" width="128" style="image-rendering: pixelated;" />
+  <img src="https://ormus.solutions/mascot/chain_braces_to_swan.gif" alt="Design Mastery" width="128" style="image-rendering: pixelated;" />
 </p>
 
 <h1 align="center">Design Mastery</h1>
