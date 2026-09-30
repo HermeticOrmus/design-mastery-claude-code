@@ -11,6 +11,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - A public pantry in `pantry/`: a competitor map, an X mine, a people mine and a pantry queue, every row cited. `pantry/MENU.md` is generated from the queue, never edited by hand, and names the next piece of work anyone can pick up.
 - Two issue forms, with labels of the same names: `routing-miss`, for when Claude picks the wrong agent or skill, and `plugin-proposal`, for a new agent, command, skill or reference.
 - CONTRIBUTING.md with a "Ways to contribute" section (Menu items, routing misses, new components and the file layout, translations, Show and tell) and the commands to test a change locally, plus a Contribute section in the README.
+- Grok Build support: the repository root is the plugin, so `grok plugin install HermeticOrmus/design-mastery-claude-code` installs it with no marketplace. `scripts/sync-grok-manifest.py --check` runs in CI to confirm no Grok marketplace file is needed, CI runs `grok plugin validate` on the plugin and installs it into a clean Grok home, and the README shows the Grok Build install.
+- `./setup.sh --grok` installs through the `grok` CLI instead of `claude`, with the same `--only`, `--list`, and `--uninstall` behavior. Because grok uninstalls by name and LibreUIUX also ships a `design-mastery` plugin, `--uninstall` skips the name when it is installed from somewhere else too.
+- `LEDGER.md`, the kintsugi ledger: every crack the 1.1.0 release found and sealed, with its evidence, and the cracks still open.
 
 ## [1.1.0] - 2026-09-30
 
