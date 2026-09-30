@@ -1,22 +1,21 @@
 {
   "name": "design-mastery",
   "owner": {
-    "name": "Hermetic Ormus",
-    "email": "hermeticormus@proton.me",
+    "name": "Diego Bodart",
     "url": "https://github.com/HermeticOrmus"
   },
   "metadata": {
-    "description": "Comprehensive design knowledge from timeless principles to legendary masters. Features brand identity commands, design auditing, and deep expertise in visual hierarchy, typography, color theory, Gestalt psychology, and historical design movements.",
-    "version": "1.0.0"
+    "description": "The Design Mastery plugin for Claude Code: 3 agents, 4 commands, and 5 skills, with 27 reference files on design principles, masters, movements, and brand systems.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "design-mastery",
       "source": ".",
-      "description": "Master design through principles, legendary designers, and historical movements. Build professional brand identities with systematic workflows.",
-      "version": "1.0.0",
+      "description": "Design principles, legendary designers, and historical movements applied to UI work, with agents and workflows for brand identity, design audits, style guides, and premium landing pages.",
+      "version": "1.1.0",
       "author": {
-        "name": "Hermetic Ormus",
+        "name": "Diego Bodart",
         "url": "https://github.com/HermeticOrmus"
       },
       "homepage": "https://github.com/HermeticOrmus/design-mastery-claude-code",
@@ -36,26 +35,13 @@
         "dieter-rams",
         "bauhaus",
         "swiss-design",
-        "gestalt"
+        "gestalt",
+        "paula-scher",
+        "paul-rand",
+        "design-audit",
+        "landing-page"
       ],
-      "category": "design",
-      "strict": false,
-      "commands": [
-        "./commands/brand-identity.md",
-        "./commands/design-audit.md",
-        "./commands/style-guide.md"
-      ],
-      "agents": [
-        "./agents/design-master.md",
-        "./agents/brand-architect.md",
-        "./agents/visual-historian.md"
-      ],
-      "skills": [
-        "./skills/design-principles",
-        "./skills/design-masters",
-        "./skills/design-movements",
-        "./skills/brand-systems"
-      ]
+      "category": "design"
     }
   ]
 }
