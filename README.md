@@ -173,8 +173,10 @@ design-mastery-claude-code/
 │   └── premium-saas-design/
 │       └── SKILL.md
 ├── evals/                      # cases for `claude plugin eval`
+├── pantry/                     # research and the Menu of open work
 ├── setup.sh
 ├── CHANGELOG.md
+├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
 ```
@@ -192,6 +194,14 @@ Each case runs the plugin and a no-plugin baseline, so the report shows what the
 ## Feedback
 
 Starred this? Tell us what worked and what is missing: [open a feedback issue](https://github.com/HermeticOrmus/design-mastery-claude-code/issues/new?template=feedback.yml). Every piece of feedback gets an answer, and changes that come from it are credited in the release notes.
+
+## Contribute
+
+- Take an item from the [Menu](pantry/MENU.md): each one has a Done-when anyone can check. Open items are [`[menu]` issues](https://github.com/HermeticOrmus/design-mastery-claude-code/issues?q=is%3Aopen+label%3Amenu).
+- New here? Start with the [good first issues](https://github.com/HermeticOrmus/design-mastery-claude-code/contribute).
+- Use a form: [feedback](https://github.com/HermeticOrmus/design-mastery-claude-code/issues/new?template=feedback.yml), [routing miss](https://github.com/HermeticOrmus/design-mastery-claude-code/issues/new?template=routing-miss.yml) when Claude picks the wrong agent or skill, or [plugin proposal](https://github.com/HermeticOrmus/design-mastery-claude-code/issues/new?template=plugin-proposal.yml) for a new agent, command, skill or reference.
+- Show what you built in [Discussions, Show and tell](https://github.com/HermeticOrmus/design-mastery-claude-code/discussions/categories/show-and-tell).
+- The file layout and the commands to test a change locally are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contributing
 
