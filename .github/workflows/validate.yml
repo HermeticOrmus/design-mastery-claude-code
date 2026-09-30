@@ -1,0 +1,39 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  plugins:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install the Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Validate the marketplace manifest
+        run: claude plugin validate .
+      - name: Validate the plugin and its agents, commands, and skills
+        # The repo root is both the marketplace and the plugin. `validate .` reads
+        # marketplace.json first, so validate a copy without it to check plugin.json
+        # and every component's frontmatter.
+        run: |
+          set -euo pipefail
+          dir="$RUNNER_TEMP/plugin"
+          mkdir -p "$dir"
+          git ls-files | grep -v '^.claude-plugin/marketplace.json$' | xargs -d '\n' cp --parents -t "$dir"
+          claude plugin validate --strict "$dir"
+      - name: Install every plugin into a clean config
+        run: |
+          set -euo pipefail
+          export CLAUDE_CONFIG_DIR="$RUNNER_TEMP/claude-config"
+          claude plugin marketplace add "$GITHUB_WORKSPACE"
+          mk=$(jq -r '.name' .claude-plugin/marketplace.json)
+          for p in $(jq -r '.plugins[].name' .claude-plugin/marketplace.json); do
+            claude plugin install "$p@$mk"
+          done
+          claude plugin list
