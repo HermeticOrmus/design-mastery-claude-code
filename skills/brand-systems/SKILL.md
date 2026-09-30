@@ -1,6 +1,6 @@
 ---
 name: brand-systems
-description: Building comprehensive brand identity systems from strategy to implementation. Covers logo design, color palettes, typography pairing, voice guidelines, and system documentation. Use when creating new brands, rebranding, or systematizing existing identities.
+description: "Brand identity building blocks: positioning, personality, archetypes, logo systems, color palettes, type pairing, voice, and guidelines documentation. Use when creating a brand, rebranding, or turning an existing identity into tokens and rules others can follow."
 ---
 
 # Brand Systems

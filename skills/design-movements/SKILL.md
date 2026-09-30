@@ -1,6 +1,6 @@
 ---
 name: design-movements
-description: Historical design movements and their enduring influence. Understand Bauhaus, Swiss International Style, Art Deco, Memphis, and more. Use when choosing an aesthetic direction, understanding cultural context, or predicting trend cycles.
+description: "Design movements from Arts and Crafts through Bauhaus, Swiss Style, Memphis, and grunge to flat design and current styles, with context, visual markers, and UI tokens for each. Use when choosing an aesthetic direction, explaining why a style reads the way it does, or applying a period style without misusing it."
 ---
 
 # Design Movements
