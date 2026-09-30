@@ -24,7 +24,7 @@ Counts: open 7, in flight 0, shipped 0, parked 0, dropped 0, needs fixing 0
 |-----|-------|-------|------------|-------|-------|---------|-------|---------|
 | browser-audit | Let design-audit read a running page through a browser MCP (`browser-audit`) | open | medium | repo | 2026-09-30 | 6 | - | - |
 | contrast-check | Compute contrast ratios with a script instead of estimating them (`contrast-check`) | open | high | repo | 2026-09-30 | 1 | - | - |
-| eval-baseline | Record a baseline run of the eval suite (`eval-baseline`) | open | medium | eval | 2026-09-30 | 3 | - | - |
+| eval-baseline | Record a baseline run of the eval suite (`eval-baseline`) | open | medium | eval | 2026-09-30 | 3 | #4 | - |
 | eval-coverage | Add eval cases for style-guide and premium-landing (`eval-coverage`) | open | medium | eval | 2026-09-30 | 4 | - | - |
 | generic-defaults-reference | Name the generic AI defaults and the principle each one breaks (`generic-defaults-reference`) | open | high | repo | 2026-09-30 | 2 | - | - |
 | other-harnesses | Document the skills in Cursor, Codex and Gemini CLI (`other-harnesses`) | open | medium | repo | 2026-09-30 | 7 | - | - |
