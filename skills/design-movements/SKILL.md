@@ -425,8 +425,16 @@ Styles tend to return on ~30-year cycles:
 
 ## Resources
 
+Read the matching file when a task needs a movement in depth: origins and context, key figures and works with dates, visual markers, UI tokens with Tailwind or CSS snippets, accessibility cautions, and common misreadings.
+
+- **references/arts-and-crafts.md**: Morris, the moral case for craft, and artisanal UI
+- **references/art-nouveau.md**: Whiplash curves, Mucha, Guimard, and ornament used with restraint
 - **references/bauhaus.md**: Complete Bauhaus history and application
 - **references/swiss-international.md**: Grid systems and Swiss principles
+- **references/psychedelic.md**: 1960s poster art, vibrating color, and where it breaks accessibility
+- **references/postmodernism.md**: Venturi, Weingart, Greiman, and layered complexity
 - **references/memphis-group.md**: Memphis patterns and colors
+- **references/grunge-deconstructivism.md**: Carson, Brody, Emigre, Cranbrook, and expressive layers over readable text
+- **references/flat-design.md**: Skeuomorphism, Metro, flat, Material, neumorphism, glassmorphism, and current styles
 - **references/art-deco.md**: Deco geometry and application
 - **references/minimalism.md**: Less-is-more philosophy
