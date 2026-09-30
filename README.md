@@ -205,6 +205,8 @@ Each case runs the plugin and a no-plugin baseline, so the report shows what the
 
 Starred this? Tell us what worked and what is missing: [open a feedback issue](https://github.com/HermeticOrmus/design-mastery-claude-code/issues/new?template=feedback.yml). Every piece of feedback gets an answer, and changes that come from it are credited in the release notes.
 
+Cracks we found and sealed: [LEDGER.md](LEDGER.md).
+
 ## Contribute
 
 - Take an item from the [Menu](pantry/MENU.md): each one has a Done-when anyone can check. Open items are [`[menu]` issues](https://github.com/HermeticOrmus/design-mastery-claude-code/issues?q=is%3Aopen+label%3Amenu).
