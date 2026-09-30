@@ -301,9 +301,12 @@ A logo must be:
 
 ## Resources
 
+Read the matching profile when a task names a master or needs their method in depth. Each covers key works with dates, the principles to borrow, how to apply them in UI work, and common misreadings.
+
 - **references/saul-bass.md**: Complete Bass analysis
 - **references/massimo-vignelli.md**: The Vignelli Canon explained
 - **references/dieter-rams.md**: 10 Principles applied to digital
 - **references/paula-scher.md**: Typography as expression
 - **references/david-carson.md**: Breaking rules intentionally
 - **references/josef-muller-brockmann.md**: Grid systems mastery
+- **references/paul-rand.md**: Logo thinking, wit, and identity systems
