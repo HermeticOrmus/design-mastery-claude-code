@@ -269,6 +269,8 @@ Take any element and place it elsewhere. Does it still feel like it belongs? If 
 
 ## Resources
 
+Read the matching file when a decision needs more depth than the summary above.
+
 - **references/gestalt-principles.md**: Deep dive on perceptual grouping
 - **references/visual-hierarchy.md**: Comprehensive hierarchy techniques
 - **references/color-theory.md**: Color psychology and application
