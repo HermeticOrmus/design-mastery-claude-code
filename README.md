@@ -30,21 +30,30 @@ Design Mastery is a Claude Code plugin that transforms how you approach visual d
 
 ## Installation
 
-### Claude Code Plugin Marketplace
+### Install from Claude Code
+
+```
+/plugin marketplace add HermeticOrmus/design-mastery-claude-code
+/plugin install design-mastery@design-mastery
+```
+
+The same thing from a terminal:
 
 ```bash
-# Add to your Claude Code plugins
-claude plugin add design-mastery
+claude plugin marketplace add HermeticOrmus/design-mastery-claude-code
+claude plugin install design-mastery@design-mastery
 ```
+
+Or from a clone of this repository, run `./setup.sh`. It registers the checkout as a marketplace and installs the plugin through the Claude Code CLI (`./setup.sh --list` shows what it installs, `--scope project` installs for one project only, `--uninstall` removes it). Restart Claude Code after installing so it loads the plugin.
 
 ### Manual Installation
 
-1. Clone this repository to your `.claude/plugins/` directory:
-```bash
-git clone https://github.com/HermeticOrmus/design-mastery-claude-code ~/.claude/plugins/design-mastery
-```
+Copy the agents, commands, and skills into a project's `.claude/` folder for project-specific use:
 
-2. Or copy the contents to your project's `.claude/` folder for project-specific use.
+```bash
+git clone https://github.com/HermeticOrmus/design-mastery-claude-code
+cp -r design-mastery-claude-code/agents design-mastery-claude-code/commands design-mastery-claude-code/skills your-project/.claude/
+```
 
 ## What's Included
 
@@ -63,6 +72,7 @@ git clone https://github.com/HermeticOrmus/design-mastery-claude-code ~/.claude/
 | `/brand-identity` | Guided workflow for creating brand identity systems |
 | `/design-audit` | Systematic evaluation against design principles |
 | `/style-guide` | Generate design system documentation |
+| `/premium-landing` | Plan, build, review, and refine a premium SaaS landing page section by section |
 
 ### Skills (Knowledge Bases)
 
@@ -72,6 +82,9 @@ git clone https://github.com/HermeticOrmus/design-mastery-claude-code ~/.claude/
 | **design-masters** | Saul Bass, Vignelli, Rams, Scher, Brockmann, Carson, Rand |
 | **design-movements** | Bauhaus, Swiss Style, Art Deco, Memphis, and more |
 | **brand-systems** | Logo design, color palettes, typography pairing, voice |
+| **premium-saas-design** | The Define, Build, Review, Refine loop for premium SaaS marketing sites |
+
+Each knowledge skill ships reference files that Claude reads on demand: a profile for every master (Bass, Vignelli, Rams, Scher, Müller-Brockmann, Carson, Rand), a file for every movement in the design-movements lineage, and deep dives on Gestalt, hierarchy, composition, color, typography, logos, palettes, type pairing, and brand voice.
 
 ## Usage Examples
 
@@ -130,6 +143,9 @@ Learn from designers whose work has shaped visual culture:
 
 ```
 design-mastery-claude-code/
+├── .claude-plugin/
+│   ├── marketplace.json        # the design-mastery marketplace
+│   └── plugin.json             # the design-mastery plugin (repo root)
 ├── agents/
 │   ├── design-master.md
 │   ├── brand-architect.md
@@ -137,6 +153,7 @@ design-mastery-claude-code/
 ├── commands/
 │   ├── brand-identity.md
 │   ├── design-audit.md
+│   ├── premium-landing.md
 │   └── style-guide.md
 ├── skills/
 │   ├── design-principles/
@@ -147,15 +164,34 @@ design-mastery-claude-code/
 │   │   ├── SKILL.md
 │   │   └── references/
 │   ├── design-movements/
-│   │   └── SKILL.md
-│   └── brand-systems/
-│       ├── SKILL.md
-│       └── assets/
-├── .claude-plugin/
-│   └── marketplace.json
+│   │   ├── SKILL.md
+│   │   └── references/
+│   ├── brand-systems/
+│   │   ├── SKILL.md
+│   │   ├── assets/
+│   │   └── references/
+│   └── premium-saas-design/
+│       └── SKILL.md
+├── evals/                      # cases for `claude plugin eval`
+├── setup.sh
+├── CHANGELOG.md
 ├── LICENSE
 └── README.md
 ```
+
+## Evals
+
+`evals/` holds cases for `claude plugin eval`: a design audit of a flawed dashboard, a brand request that should start with positioning questions, a movement identification, and a Dieter Rams simplification. Run them from a clone with:
+
+```bash
+claude plugin eval . --no-publish
+```
+
+Each case runs the plugin and a no-plugin baseline, so the report shows what the plugin adds.
+
+## Feedback
+
+Starred this? Tell us what worked and what is missing: [open a feedback issue](https://github.com/HermeticOrmus/design-mastery-claude-code/issues/new?template=feedback.yml). Every piece of feedback gets an answer, and changes that come from it are credited in the release notes.
 
 ## Contributing
 
@@ -188,7 +224,7 @@ This repository is part of a growing family of open-source toolkits for Claude C
 
 ### Libre suite — comprehensive plugin bundles
 
-- [LibreUIUX-Claude-Code](https://github.com/HermeticOrmus/LibreUIUX-Claude-Code) — UI/UX development (152 agents, 70 plugins, 76 commands, 74 skills)
+- [LibreUIUX-Claude-Code](https://github.com/HermeticOrmus/LibreUIUX-Claude-Code) — UI/UX development (152 agents, 71 plugins, 76 commands, 74 skills)
 - [LibreArch-Claude-Code](https://github.com/HermeticOrmus/LibreArch-Claude-Code) — Software architecture and system design
 - [LibreCopy-Claude-Code](https://github.com/HermeticOrmus/LibreCopy-Claude-Code) — Technical writing and documentation engineering
 - [LibreDevOps-Claude-Code](https://github.com/HermeticOrmus/LibreDevOps-Claude-Code) — DevOps engineering and infrastructure automation
