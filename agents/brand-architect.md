@@ -242,7 +242,7 @@ Hex: #0066CC
 RGB: 0, 102, 204
 Tailwind: blue-600
 Usage: Primary actions, links, trust signals
-Accessibility: Passes WCAG AA on white (contrast 4.5:1)
+Accessibility: Passes WCAG AA on white (contrast 5.57:1)
 Psychology: Conveys reliability, professionalism
 ```
 

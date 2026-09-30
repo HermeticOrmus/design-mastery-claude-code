@@ -118,7 +118,7 @@ Primary:
   Tailwind: blue-600
 
   Usage: CTAs, links, primary actions
-  Accessible on: white (4.5:1), gray-50 (4.2:1)
+  Accessible on: white (5.17:1), gray-50 (4.95:1)
 ```
 
 **Extended Palette**:
