@@ -46,6 +46,16 @@ claude plugin install design-mastery@design-mastery
 
 Or from a clone of this repository, run `./setup.sh`. It registers the checkout as a marketplace and installs the plugin through the Claude Code CLI (`./setup.sh --list` shows what it installs, `--scope project` installs for one project only, `--uninstall` removes it). Restart Claude Code after installing so it loads the plugin.
 
+### Install in Grok Build
+
+Grok Build loads the same plugin. The repository root is the plugin, so it installs directly, with no marketplace:
+
+```bash
+grok plugin install HermeticOrmus/design-mastery-claude-code
+```
+
+From a clone, `./setup.sh --grok` installs it through the `grok` CLI; `--list` and `--uninstall` work the same way. Grok Build uninstalls plugins by name only, and [LibreUIUX](https://github.com/HermeticOrmus/LibreUIUX-Claude-Code) also ships a plugin named `design-mastery`. If you install both, `./setup.sh --grok --uninstall` skips the name rather than remove the wrong copy. This plugin has no hooks.
+
 ### Manual Installation
 
 Copy the agents, commands, and skills into a project's `.claude/` folder for project-specific use:
