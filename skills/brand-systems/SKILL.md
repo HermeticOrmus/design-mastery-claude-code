@@ -368,6 +368,8 @@ Style: [Visual approach in 2-3 words]
 
 ## Resources
 
+Read the matching file when a brand task needs more depth than the summary above.
+
 - **assets/brand-canvas-template.md**: Fillable brand canvas
 - **references/logo-design.md**: Logo creation principles
 - **references/color-palettes.md**: Color theory for branding
