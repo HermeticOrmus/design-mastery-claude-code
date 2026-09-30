@@ -15,3 +15,6 @@ Thumbs.db
 # Temporary
 *.tmp
 *.temp
+
+# Eval results (claude plugin eval)
+evals/results/
