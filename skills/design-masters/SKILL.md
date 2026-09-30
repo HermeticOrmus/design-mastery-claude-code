@@ -1,6 +1,6 @@
 ---
 name: design-masters
-description: Deep knowledge of legendary designers and their enduring contributions. Learn from Saul Bass, Massimo Vignelli, Dieter Rams, Paula Scher, and others whose work defines excellence. Use when seeking inspiration, understanding design history, or applying proven approaches.
+description: "Working profiles of Saul Bass, Massimo Vignelli, Dieter Rams, Paula Scher, Josef Müller-Brockmann, David Carson, and Paul Rand: key works, principles, and how to apply each in UI work. Use when a design needs a proven approach, a named reference to follow, or a lesson from a specific master."
 ---
 
 # Design Masters

@@ -1,6 +1,6 @@
 ---
 name: design-principles
-description: Core visual design principles that underpin all great design. Master gestalt psychology, visual hierarchy, composition, color theory, and typography fundamentals. Use when making design decisions or evaluating designs against proven principles.
+description: "Core visual design principles (visual hierarchy, Gestalt grouping, composition, balance, contrast, white space, color, typography) with UI fixes, a checklist, and deep-dive references. Use when making or defending a layout, type, or color decision, or when a design feels off and you need to name why."
 ---
 
 # Design Principles
