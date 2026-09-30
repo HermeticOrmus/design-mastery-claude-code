@@ -4,6 +4,14 @@ All notable changes to Design Mastery for Claude Code are documented in this fil
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- A public pantry in `pantry/`: a competitor map, an X mine, a people mine and a pantry queue, every row cited. `pantry/MENU.md` is generated from the queue, never edited by hand, and names the next piece of work anyone can pick up.
+- Two issue forms, with labels of the same names: `routing-miss`, for when Claude picks the wrong agent or skill, and `plugin-proposal`, for a new agent, command, skill or reference.
+- CONTRIBUTING.md with a "Ways to contribute" section (Menu items, routing misses, new components and the file layout, translations, Show and tell) and the commands to test a change locally, plus a Contribute section in the README.
+
 ## [1.1.0] - 2026-09-30
 
 A minor release: nothing is removed or renamed, and existing agents, commands, and skills keep their names. Install it with `/plugin marketplace add HermeticOrmus/design-mastery-claude-code` and `/plugin install design-mastery@design-mastery`.
