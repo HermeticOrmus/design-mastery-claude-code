@@ -62,6 +62,6 @@ unset CLAUDE_CONFIG_DIR
 claude plugin eval . --no-publish
 ```
 
-`git ls-files` copies only tracked files, so `git add` new files before the strict check. CI ([`.github/workflows/validate.yml`](.github/workflows/validate.yml)) runs the same validation and clean-config install on every pull request. A first-time contributor's CI run waits until a maintainer approves it, so a pending check on your first pull request is expected.
+`git ls-files` copies only tracked files, so `git add` new files before the strict check. CI ([`.github/workflows/check.yml`](.github/workflows/check.yml), running `bash scripts/check.sh`) runs the same validation and clean-config install on every pull request. A first-time contributor's CI run waits until a maintainer approves it, so a pending check on your first pull request is expected.
 </content>
 </invoke>
